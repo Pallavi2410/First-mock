@@ -1,0 +1,256 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+    <title>RS cafe</title>
+  </head>
+  <style>
+
+    body{
+      background-color: #66f7d0;
+    }
+    h1{
+      color: darkblue;
+    }
+    hr{
+      background-color: black;
+    }
+    img{
+      border-radius: 70%;
+    }
+    .square-img{
+      border-radius: 0 !important;
+    }
+    .card {
+      max-height: 400px;
+    }
+    .card img{
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .nav-tabs a{
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #121212;
+      transition: all .3s ease;
+      margin: 0 10px;
+      padding: 5px 15px;
+    }
+    .nav-tabs a:hover{
+      background-color: #a3f1a3;
+      color: #c82020;
+    }
+    a{
+      color: #121212;
+      text-decoration: none;
+    }
+    .hyper-links span a{
+      text-decoration: none !important;
+      text-transform: capitalize !important;
+    }
+    .hyper-links span{
+      margin: 4px 15px;
+      position: relative;
+      text-decoration: none !important;
+      padding: 0 20px;
+      font-size: 1.1rem;
+      text-transform: capitalize !important;
+      transition: all .3s ease;
+    }
+    .hyper-links span::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: crimson;
+      width: 0%;
+      transition: all .3s ease;
+      height: 2px;
+    }
+    .hyper-links span:hover::before{
+      width: 100%;
+    }
+   </style>
+  <body>
+    
+    
+    <h1 style="background-color: #fbfcfd;margin:0;text-align:center;" class=" btn-block"> <span style="color: #121212ee;font-size:3rem">RS</span> <sub style="text-shadow:0 0 3px #000;color:#f11717">Cafe</sub> </h1>
+    <nav  style="background-color: #f1f2f3;margin:0;padding-bottom:20px" class="d-flex justify-content-between align-items-center">
+
+      <div class="nav-tabs">
+              <a href="https://www.swiggy.com/" class=" ">Home</a>
+              <a href="https://www.swiggy.com/restaurants/r-s-cafe-manasarovar-jaipur-416033" class="">Info</a>
+              <a href="https://tea-list.com/tea-menu" class="">Menu</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+            </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </nav>
+        <!-- Navbar content -->
+        <!-- hyper links -->
+     <div class=" hyper-links d-flex align-items-center justify-content-center" style="background-color: #f5f5ff;padding:10px 0;">
+       <span class=""><a href="https://restaurant-guru.in/aboutus">
+         ABOUT</span>
+        </a>
+        <span class=""><a href="https://restaurant-guru.in/contactus">
+        TALK TO US</span>
+      </a>
+      <span class=""><a href="https://restaurant-guru.in/RS-CAFE-AND-RESTAURANT-Senapati">
+        CATERING</span>
+      </a>
+      <span class=""><a href="https://in.images.search.yahoo.com/search/images;_ylt=AwrKC1cQa4xjTGgmYBS7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=gallery+of+cafe+restaurant&fr2=piv-web&type=E211IN826G91704&fr=mcafee">
+        GALLERY</span>
+      </a>
+      <span class=""><a href="#">BLOG</a></span>
+    </div>
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/p3.jpeg' %}"  class="d-block w-100  square-img" alt="..." height="450px" width="50">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/p1.jpg' %}" class="d-block w-100 square-img" alt="..."height="450px" width="50px">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/p4.jpeg' %}" class="d-block w-100 square-img" alt="..."height="450px" width="50px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    <section class="d-flex flex-wrap justify-content-between m-4">
+      
+      <div class="card" style="width: 19rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t1.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SPL CHAI</h5>
+          <p class="card-text"> Have a cup tea with full joy !!</p>
+          <a href="https://www.youtube.com/watch?v=7FVw3KJn5yM" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t4.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LEMON CHAI</h5>
+          <p class="card-text"> Have a cup tea with full joy !!</p>
+          <a href="https://www.youtube.com/watch?v=5IwmuaKE7tA" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t2.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SPL CHAI</h5>
+          <p class="card-text"> Have a cup tea with full joy !!</p>
+          <a href="https://www.youtube.com/watch?v=7FVw3KJn5yM" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t3.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HYDERBAD SPL CHAI</h5>
+          <p class="card-text"> Have a cup tea with full joy !!</p>
+          <a href="https://www.youtube.com/watch?v=v97lei_HEGE" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t11.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ROSE KOCKMIX</h5>
+          <p class="card-text"> Have a cup tea with full joy !!</p>
+          <a href="https://www.youtube.com/watch?v=v97lei_HEGE" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t6.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BADAM MILK</h5>
+          <p class="card-text"> Have a cup of badam milk with full joy !!</p>
+          <a href="https://www.youtube.com/results?search_query=badam+milk+recipe" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;box-shadow:0 0 4px #121212;margin:5px 0;">
+        <img src="{% static 'images/t7.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ROSE MILK</h5>
+          <p class="card-text"> Have a cup of rose milk with full joy !!</p>
+          <a href="https://www.youtube.com/results?search_query=rose+milk+recipe+in+telugu+" class="btn btn-primary">Details</details></a>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    </nav>
+    <section class="d-flex flex-wrap justify-content-between m-4">
+    <img src="{% static 'images/T8.jpeg'%}"  class="rounded-circle" alt="...">
+    <img src="{% static 'images/T2.jpeg'%}" class="rounded-circle" alt="...">
+  </section>
+    <div class="bg-dark text-white p-3" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+    
+  </body>
+</html>
